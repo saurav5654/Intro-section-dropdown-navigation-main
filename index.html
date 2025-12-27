@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="panel">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">snap</div>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <img src="./images/icon-menu.svg" alt="menu">
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="menu-close" aria-label="Close menu">
+          <img src="./images/icon-close-menu.svg" alt="close">
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <button class="nav-btn" aria-expanded="false">Features</button>
+            <ul class="dropdown">
+              <li>Todo List</li>
+              <li>Calendar</li>
+              <li>Reminders</li>
+              <li>Planning</li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button class="nav-btn" aria-expanded="false">Company</button>
+            <ul class="dropdown">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">Careers</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="auth">
+        <a class="login" href="#">Login</a>
+        <a class="btn register" href="#">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <h1>Make remote work</h1>
+        <p class="lead">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <a class="cta" href="#">Learn more</a>
+        <div class="clients">
+          <img src="./images/client-databiz.svg" alt="databiz logo">
+          <img src="./images/client-audiophile.svg" alt="audiophile logo">
+          <img src="./images/client-meet.svg" alt="meet logo">
+          <img src="./images/client-maker.svg" alt="maker logo">
+        </div>
+      </div>
+      <div class="hero-right">
+        <picture class="hero-picture">
+          <source media="(min-width:901px)" srcset="./images/image-hero-desktop.png">
+          <img class="illustration" src="./images/image-hero-mobile.png" alt="Hero illustration">
+        </picture>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
